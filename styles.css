@@ -1,7 +1,37 @@
+/* Utilities */
 .visuallyhidden { 
     position: absolute; 
     overflow: hidden; 
     clip: rect(0 0 0 0); 
     height: 1px; width: 1px; 
     margin: -1px; padding: 0; border: 0; 
+  }
+
+  /* Foundation Elements */
+  .button {
+    border: 1px solid #1b9dde;
+    color: #1b9dde;
+  }
+
+  /* Add Task */
+  .add-task__input-field {
+    height: 36px;
+    margin: 6px 0;
+  }
+
+  .add-task__actions {
+    margin: 0;
+  }
+
+  /* Tasks */
+  .task__text {
+    margin-bottom: 0;
+  }
+
+  .task {
+    margin-bottom: 16px;
+  }
+
+  .task--complete .task__text {
+    text-decoration: line-through;
   }
