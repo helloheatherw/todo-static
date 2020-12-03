@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="styles.css">
     <title>To Do Application</title>
 </head>
-<body class="mui-container">
+<body class="body">
     <header>
         <h1 class="mui--text-center">To Do!</h1>
-        <div class="mui-row add-task__actions">
+        <div class="add-task__actions">
             <label for="add-task-input" class="visuallyhidden">Add new to do task</label>
-            <input id="add-task-input" class="mui-col-xs-12 mui-col-md-9 add-task__input-field"></input>
-            <button class="mui-btn mui-btn--raised button mui-col-xs-12 mui-col-md-3">Add</button>
+            <input id="add-task-input" class="add-task__input-field"></input>
+            <button class="mui-btn mui-btn--raised button">Add</button>
         </div>
         <p class="mui--text-center">You have 3 tasks to complete</p>
     </header>
-    <main class="mui-row">
-        <section class="mui-col-xs-12 mui-col-md-6">
+    <main class="all-tasks">
+        <section class="incomplete-tasks">
             <h2>Tasks to do:</h2>
             <ul class="mui-list--unstyled">
                 <li class="task">
@@ -38,7 +38,7 @@
                 </li>
             </ul>
         </section>
-        <section class="mui-col-xs-12 mui-col-md-6">
+        <section class="complete-tasks">
             <h2>Complete tasks:</h2>
             <ul class="mui-list--unstyled">
                 <li class="task task--complete">

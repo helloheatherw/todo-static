@@ -8,6 +8,12 @@
   }
 
   /* Foundation Elements */
+  .body {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0 8px;
+  }
+
   .button {
     border: 1px solid #1b9dde;
     color: #1b9dde;
@@ -15,12 +21,30 @@
 
   /* Add Task */
   .add-task__input-field {
-    height: 36px;
+    height: 30px;
     margin: 6px 0;
   }
 
   .add-task__actions {
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+
+  @media screen and (min-width: 600px) {
+    .add-task__actions {
+      flex-direction: row;
+      gap: 8px;
+    }
+
+    .add-task__input-field {
+      flex-basis: 75%;
+    }
+
+    .add-task__actions .button {
+      flex-basis: 25%;
+    }
   }
 
   /* Tasks */
@@ -34,4 +58,16 @@
 
   .task--complete .task__text {
     text-decoration: line-through;
+  }
+
+  .all-tasks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 0 auto;
+    max-width: 700px;
+  }
+
+  .incomplete-tasks, .complete-tasks {
+    flex: 1 1 auto;
   }
