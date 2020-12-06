@@ -9,14 +9,36 @@
 
   /* Foundation Elements */
   .body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
     margin: 0 auto;
     max-width: 900px;
     padding: 0 8px;
   }
 
   .button {
+    background-color: white;
     border: 1px solid #1b9dde;
+    border-radius: 2px;
     color: #1b9dde;
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+    margin: 6px 0;
+    padding: 0 26px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+    vertical-align: middle;
+  }
+
+  .heading {
+    font-weight: 400;
+  }
+
+ /* Header */
+  .header {
+    text-align: center;
   }
 
   /* Add Task */
@@ -70,4 +92,9 @@
 
   .incomplete-tasks, .complete-tasks {
     flex: 1 1 auto;
+  }
+
+  .task-list {
+    list-style-type: none;
+    padding-inline-start: 0;
   }
